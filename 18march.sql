@@ -16,7 +16,7 @@ CASE
 when Region_nk='Hyderabad' then 'HB'
 when Region_nk='Lucknow' then 'LK'
 else Region_nk
-end as Region_Name,
+end as Region_Names,
 Fs.Amount,Dr.Region_wk,Dr.Region
 from FACT_Sales as Fs left outer join DIM_Region as Dr
 on Fs.region_wk=Dr.Region_wk
